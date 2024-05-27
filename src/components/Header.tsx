@@ -1,4 +1,4 @@
-import Logo from "../public/img/pizza-logo.svg";
+import Logo from "../assets/img/pizza-logo.svg";
 
 export const Header = () => {
     return (
