@@ -8,9 +8,6 @@ import {PizzaBlock} from "./components/PizzaBlock";
 function App() {
   return (
       <div className="wrapper">
-          <div className="box1">
-              <div className="box2">SASS</div>
-          </div>
         <Header />
         <div className="content">
           <div className="container">
