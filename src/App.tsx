@@ -19,7 +19,9 @@ function App() {
             </div>
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
-              <PizzaBlock title="Чизбургер-пицца" price="395"/>
+                {
+                    pizzas.map((object) => <PizzaBlock title={object.title} price={object.price} key = {object.id} id = {object.id} imageUrl={object.imageUrl}/>)
+                }
             </div>
           </div>
         </div>

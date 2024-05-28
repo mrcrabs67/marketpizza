@@ -1,12 +1,13 @@
 import {useState} from "react";
 
 type Props = {
-    id?: string;
+    id: number;
     title: string;
-    price: string;
+    price: number;
+    imageUrl: string;
 };
 
-export const PizzaBlock = ({title, price}: Props) => {
+export const PizzaBlock = ({id, title, price} : Props) => {
 
 
     const [pizzaCount, setPizzaCount] = useState(0);
@@ -15,10 +16,10 @@ export const PizzaBlock = ({title, price}: Props) => {
         setPizzaCount(pizzaCount+1);
     }
     return (
-            <div className="pizza-block">
+            <div key={id} className="pizza-block">
                 <img
                     className="pizza-block__image"
-                    src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+                    src="https://media.dodostatic.net/image/r:292x292/11EE7D610D2925109AB2E1C92CC5383C.avif"
                     alt="Pizza"
                 />
                 <h4 className="pizza-block__title">{title}</h4>
