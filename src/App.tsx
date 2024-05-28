@@ -4,8 +4,10 @@ import {Header} from "./components/Header";
 import {Categories} from "./components/Categories";
 import {Sort} from "./components/Sort";
 import {PizzaBlock} from "./components/PizzaBlock";
+import pizzas from "./assets/pizza.json"
 
 function App() {
+    console.log(pizzas);
   return (
       <div className="wrapper">
         <Header />
