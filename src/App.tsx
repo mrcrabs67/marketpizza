@@ -7,7 +7,7 @@ import {PizzaBlock} from "./components/PizzaBlock";
 import pizzas from "./assets/pizza.json"
 
 function App() {
-    console.log(pizzas);
+    // console.log(pizzas);
   return (
       <div className="wrapper">
         <Header />
