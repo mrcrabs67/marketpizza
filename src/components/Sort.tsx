@@ -44,7 +44,7 @@ export const Sort = () => {
                     }
                 </ul>
             </div>
-                ) : 'hide'}
+                ) : ''}
         </div>
     );
 };
