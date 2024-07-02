@@ -13,9 +13,9 @@
   "dependencies": {
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
+    "react-content-loader": "^7.0.2",
     "react-dom": "^18.2.0",
     "vite-plugin-svgr": "^4.2.0"
-
   },
   "devDependencies": {
     "@types/cypress": "^1.1.3",

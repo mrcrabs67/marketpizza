@@ -3,10 +3,9 @@ import './scss/app.scss';
 import {Header} from "./components/Header";
 import {Categories} from "./components/Categories";
 import {Sort} from "./components/Sort";
-import {PizzaBlock} from "./components/PizzaBlock";
+import {PizzaBlock} from "./components/PizzaBlock/PizzaBlock.tsx";
 import {useEffect, useState} from "react";
-import {a} from "vite/dist/node/types.d-aGj9QkWt";
-import any = jasmine.any;
+import Skeleton from "./components/PizzaBlock/Skeleton.tsx";
 
 function App() {
 
@@ -37,7 +36,8 @@ function App() {
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
                 {
-                    items.map((object) => <PizzaBlock {...object} key = {object.id} />)
+                    // items.map((object) => <PizzaBlock {...object} key = {object.id} />)
+                    items.map(() => <Skeleton />)//Отображаем только скелетон
                 }
             </div>
           </div>
