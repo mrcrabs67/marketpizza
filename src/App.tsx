@@ -13,6 +13,7 @@ function App() {
         <Header />
         <div className="content">
           <div className="container">
+              {/*Попробуем внедрить роутер*/}
               <Routes>
                 <Route path="/marketpizza" element={<Home />} />
                 <Route path="/marketpizza/notfound" element={<NotFound />} />
