@@ -22,6 +22,7 @@ export const PizzaBlock = ({id, title, price, sizes, types}: Props) => {
     }
 
     return (
+        <div className="pizza-block-wrapper">
         <div key={id} className="pizza-block">
             <img
                 className="pizza-block__image"
@@ -74,6 +75,7 @@ export const PizzaBlock = ({id, title, price, sizes, types}: Props) => {
                     <i>{pizzaCount}</i>
                 </button>
             </div>
+        </div>
         </div>
     );
 };
