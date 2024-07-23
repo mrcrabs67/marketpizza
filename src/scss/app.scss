@@ -16,13 +16,22 @@ body {
   margin: 50px auto;
   border-radius: 10px;
   max-width: 1400px;
+
+  @media (max-width: 645px) {
+    width: calc(100vw - 300px);
+    margin-top: 15px;
+  }
 }
 
 .content {
   padding: 40px 0;
 
   &__title {
-    margin: 35px 0;
+    font-weight: 800;
+    font-size: 38px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
   }
 
   &__items {
@@ -56,7 +65,7 @@ body {
       .categories {
         margin-top: 30px;
         width: 100%;
-        overflow: scroll;
+        overflow: auto;
 
         ul {
           width: 785px;
@@ -106,6 +115,11 @@ body {
 }
 
 .cart {
+
+  .content_items__cart {
+    display: block!important;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -160,6 +174,7 @@ body {
       }
     }
   }
+
 
   &__item {
     display: flex;

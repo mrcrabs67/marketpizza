@@ -12,7 +12,6 @@ function App() {
       <div className="wrapper">
         <Header />
         <div className="content">
-          <div className="container">
               {/*Попробуем внедрить роутер*/}
               <Routes>
                 <Route path="/marketpizza" element={<Home />} />
@@ -20,7 +19,6 @@ function App() {
                 <Route path="/marketpizza/cart" element={<Cart />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
-            </div>
           </div>
         </div>
 )
